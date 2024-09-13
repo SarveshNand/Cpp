@@ -1,0 +1,10 @@
+Really FAST
+
+Used in Advanced Graphic Apps
+Used in embedded systems
+Used in Video Games
+
+C++ is Object Oriented
+
+Need IDE (Text Editor)
+GCC Compiler, XCode/Clang
