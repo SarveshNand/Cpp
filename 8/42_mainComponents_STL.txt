@@ -1,0 +1,74 @@
+* Majority Components (there are 4):
+    1. Iterators --> Loop them, Like vectors
+    2. Functors(Function Operators) --> manage state, parameterized
+    3. Algorithms --> Search, Sort
+    4. Containers --> Implementation of well defined data structure
+
+* Containers (Implementation of well defined data structure)
+    1. Sequence Types --> Vectors, list, deques, stacks, queues
+    2. Associative Types --> Set, multisets, maps, multimaps(binary trees)
+            ~ Unordered Associative Types --> Set, multimaps, maps, multimaps(hash maps)
+
+
+
+* In Detail :
+
+-----MAJOR COMPONENTS OF STL-----
+
+1. ---Iterators---
+
+Definition: Iterators are objects that allow you to traverse through the elements of a container (like vectors, lists, etc.) in a standardized way.
+
+Types:
+Input Iterators: Read values from a container.
+Output Iterators: Write values to a container.
+Forward Iterators: Allow reading and writing, and can move forward in a container.
+Bidirectional Iterators: Like forward iterators but can also move backward.
+Random Access Iterators: Allow access to any element in constant time and can move both forward and backward.
+
+Usage: Iterators are used in loops to access and manipulate container elements. For example, you can use iterators to iterate over a std::vector or std::list using a loop.
+
+2. ---Functors (Function Operators)---
+
+Definition: Functors, or function objects, are objects that can be called as if they were functions. They are used to encapsulate a function or operation.
+
+Characteristics:
+State Management: Functors can maintain state across multiple calls. This is useful for more complex operations.
+Parameterized: Functors can be customized by passing parameters to their constructor, allowing them to be tailored for specific tasks.
+
+Usage: Functors are commonly used with STL algorithms to define custom operations. For example, std::sort can use a functor to specify the sorting criterion.
+
+3. ---Algorithms---
+
+Definition: Algorithms are generic functions that operate on ranges of elements, such as those in containers. They perform tasks like searching, sorting, and manipulating data.
+
+Common Algorithms:
+Search: std::find, std::binary_search
+Sort: std::sort, std::stable_sort
+Manipulation: std::reverse, std::copy, std::accumulate
+
+Usage: Algorithms are used to perform operations on container elements in a standardized way. For example, std::sort can be used to sort elements of a std::vector.
+
+4. ---Containers---
+
+Definition: Containers are classes that manage collections of objects. They provide various data structures to store and manipulate data.
+
+Types:
+# Sequence Containers: These maintain the order of elements and allow sequential access.
+std::vector: Dynamic array that provides random access and efficient addition/removal of elements at the end.
+std::list: Doubly-linked list allowing efficient insertion and removal at both ends.
+std::deque: Double-ended queue supporting efficient insertion and deletion at both ends.
+std::stack: Adapter that uses std::deque or std::list to provide a Last-In-First-Out (LIFO) data structure.
+std::queue: Adapter that uses std::deque or std::list to provide a First-In-First-Out (FIFO) data structure.
+
+# Associative Containers: These store elements in a way that allows fast retrieval based on keys.
+std::set: Collection of unique elements, ordered by a specific criterion.
+std::multiset: Similar to std::set, but allows duplicate elements.
+std::map: Collection of key-value pairs, with unique keys and sorted by key.
+std::multimap: Similar to std::map, but allows duplicate keys.
+
+# Unordered Associative Containers: These use hash tables to provide fast average-time complexity for key-based operations.
+std::unordered_set: Collection of unique elements, unordered and accessed via hashing.
+std::unordered_multiset: Similar to std::unordered_set, but allows duplicate elements.
+std::unordered_map: Collection of key-value pairs, unordered and accessed via hashing, with unique keys.
+std::unordered_multimap: Similar to std::unordered_map, but allows duplicate keys.

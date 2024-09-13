@@ -1,0 +1,26 @@
+Extraction Of Digits :
+          n = 7789 % 10 = 9       Always the last digit would be the answer if we find the rem
+ /10 ->   778 % 10 = 8
+ /10 ->   77 % 10 = 7
+ /10 ->   7 % 10 = 7
+ /10 ->   0
+
+
+Reverse a Number :
+(revNum * 10) + lastDigit
+        (0 * 10) + 9 = 9
+        (9 * 10) + 8 = 98
+        (98 * 10) + 7 = 987
+        (987 * 10) + 7 = 9877
+
+
+
+Palindrome Number :
+Original Number == Reversed Number  like 1331, 11, 121
+        if (dup == reverse) cout << "true";
+        else cout << "false";
+
+
+Armstrong Number :
+Summation of the Cube of a Number of each element == The element
+        sum = sum + (lastDigit + lastDigit + lastDigit)
